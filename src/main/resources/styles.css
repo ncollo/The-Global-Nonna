@@ -1,0 +1,350 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+/* ========================================= */
+/* --- 1. WELCOME PAGE --- */
+/* ========================================= */
+
+.background-pane {
+    -fx-background-image: url("background.jpg");
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+}
+
+.glass-panel {
+    -fx-background-color: rgba(20, 10, 5, 0.8);
+    -fx-background-radius: 25;
+    -fx-border-color: rgba(230, 194, 122, 0.4); 
+    -fx-border-radius: 25;
+    -fx-border-width: 1.5;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.9), 20, 0, 0, 10);
+}
+
+.title-text-designed {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 38px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(one-pass-box, rgba(0,0,0,0.6), 5, 0, 0, 2); 
+}
+
+.subtitle-text-designed {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-text-fill: #E0E0E0;
+    -fx-font-size: 18px;
+    -fx-padding: 0 0 25 0;
+}
+
+.table-button-designed {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-background-color: rgba(20, 10, 5, 0.4); 
+    -fx-text-fill: #E6C27A;
+    -fx-border-color: rgba(230, 194, 122, 0.5);
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+    -fx-pref-width: 120;
+    -fx-pref-height: 85;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(one-pass-box, rgba(0,0,0,0.3), 5, 0, 0, 2);
+}
+
+.table-button-selected {
+    -fx-background-color: #E6C27A;
+    -fx-text-fill: #1a0f05;
+    -fx-border-color: #E6C27A;
+}
+
+.continue-button-designed {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-background-color: rgba(255, 255, 255, 0.05);
+    -fx-text-fill: #A0A0A0;
+    -fx-border-color: rgba(255, 255, 255, 0.15);
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-padding: 15;
+    -fx-margin-top: 25px;
+}
+
+.continue-button-active {
+    -fx-background-color: #E6C27A;
+    -fx-text-fill: #1a0f05;
+    -fx-border-color: #E6C27A;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(230, 194, 122, 0.4), 15, 0, 0, 0); 
+}
+
+.footer-text-designed {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-text-fill: #A0A0A0;
+    -fx-font-size: 14px;
+}
+
+/* ========================================= */
+/* --- 2. GLOBAL BRANDING & LOGOS --- */
+/* ========================================= */
+
+.brand-container {
+    -fx-background-color: rgba(20, 10, 5, 0.85);
+    -fx-background-radius: 40;
+    -fx-padding: 12 35 12 25;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 15, 0, 0, 5);
+}
+
+.logo-name-designed {
+    -fx-font-family: "Palatino Linotype", serif;
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #E6C27A;
+}
+
+.logo-slogan-designed {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 13px;
+    -fx-text-fill: #A0A0A0;
+    -fx-font-style: italic;
+    -fx-padding: -3 0 0 0;
+}
+
+/* The Gastronomy Cloche Logo */
+.logo-icon-designed {
+    -fx-background-color: #E6C27A;
+    -fx-min-width: 36px;
+    -fx-min-height: 32px;
+    -fx-max-width: 36px;
+    -fx-max-height: 32px;
+    -fx-shape: "M12 2C6.48 2 2 6.48 2 12h20c0-5.52-4.48-10-10-10zm0 2c4.42 0 8 3.58 8 8H4c0-4.42 3.58-8 8-8zM2 14h20v2H2v-2z";
+}
+
+.lang-button-designed {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-background-color: rgba(20, 10, 5, 0.85); 
+    -fx-padding: 10 20 10 20;
+    -fx-text-fill: #E6C27A;
+    -fx-border-color: #E6C27A;
+    -fx-border-width: 1.5;
+    -fx-border-radius: 30;
+    -fx-background-radius: 30;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 10, 0, 0, 5);
+}
+
+/* ========================================= */
+/* --- 3. MENU SCREEN MAIN LAYOUT --- */
+/* ========================================= */
+
+.menu-background-pane {
+    -fx-background-color: #0F0904; 
+}
+
+.menu-top-bar {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent rgba(255, 255, 255, 0.05) transparent;
+    -fx-border-width: 1px;
+}
+
+.top-bar-brand-name {
+    -fx-font-family: "Palatino Linotype", serif;
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #E6C27A;
+}
+
+.top-bar-table-label {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: #A0A0A0;
+}
+
+.menu-search-bar {
+    -fx-background-color: #1A1008;
+    -fx-text-fill: #FFFFFF;
+    -fx-prompt-text-fill: #666666;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: rgba(255,255,255,0.1);
+    -fx-pref-width: 300px;
+    -fx-padding: 10 15 10 15;
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+
+.top-bar-cart-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #E6C27A;
+    -fx-border-color: rgba(230, 194, 122, 0.3);
+    -fx-border-radius: 20;
+    -fx-padding: 10 25 10 25;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+.top-bar-cart-button:hover {
+    -fx-background-color: rgba(230, 194, 122, 0.1);
+}
+
+/* Continent Tabs */
+.continent-tab {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-text-fill: #666666;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+.continent-tab-active {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-text-fill: #E6C27A;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-border-color: transparent transparent #E6C27A transparent;
+    -fx-border-width: 3px;
+    -fx-padding: 0 0 5 0;
+}
+
+/* Category Pills */
+.category-pill {
+    -fx-background-color: transparent;
+    -fx-border-color: rgba(255, 255, 255, 0.1);
+    -fx-border-radius: 20;
+    -fx-padding: 10 18 10 18;
+}
+.category-pill-active {
+    -fx-background-color: rgba(230, 194, 122, 0.1);
+    -fx-border-color: #E6C27A;
+    -fx-border-radius: 20;
+    -fx-padding: 10 18 10 18;
+}
+
+/* Dish Grid & Cards */
+.dish-grid-scrollpane {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+}
+.dish-grid-scrollpane .viewport {
+    -fx-background-color: transparent;
+}
+
+.dish-card {
+    -fx-background-color: #1A1008; 
+    -fx-border-color: rgba(255, 255, 255, 0.05);
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-padding: 15;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 10, 0, 0, 5);
+    -fx-pref-width: 290px;
+}
+
+.add-to-order-btn {
+    -fx-background-color: transparent;
+    -fx-text-fill: #E6C27A;
+    -fx-border-color: rgba(230, 194, 122, 0.4);
+    -fx-border-radius: 10;
+    -fx-padding: 10;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+.add-to-order-btn:hover {
+    -fx-background-color: rgba(230, 194, 122, 0.1);
+}
+
+/* Floating Status Pill */
+.floating-status-badge {
+    -fx-background-color: #E6C27A; 
+    -fx-background-radius: 30;
+    -fx-padding: 15 25 15 25;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 15, 0, 0, 5);
+    -fx-cursor: hand;
+}
+.floating-status-crest {
+    -fx-background-color: #1a0f05; 
+    -fx-min-width: 28px;
+    -fx-min-height: 24px;
+    -fx-max-width: 28px;
+    -fx-max-height: 24px;
+    /* Gastronomy Cloche scaled */
+    -fx-shape: "M12 2C6.48 2 2 6.48 2 12h20c0-5.52-4.48-10-10-10zm0 2c4.42 0 8 3.58 8 8H4c0-4.42 3.58-8 8-8zM2 14h20v2H2v-2z";
+}
+
+/* ========================================= */
+/* --- 4. SLIDING CART DRAWER --- */
+/* ========================================= */
+
+.cart-drawer {
+    -fx-background-color: #0A0502; 
+    -fx-border-color: rgba(230, 194, 122, 0.2) transparent transparent rgba(230, 194, 122, 0.2);
+    -fx-border-width: 1px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.9), 30, 0, -10, 0); 
+}
+
+.cart-close-btn {
+    -fx-background-color: transparent;
+    -fx-text-fill: #888888;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+.cart-close-btn:hover {
+    -fx-text-fill: #FFFFFF;
+}
+
+.cart-table-badge {
+    -fx-background-color: rgba(230, 194, 122, 0.2);
+    -fx-text-fill: #E6C27A;
+    -fx-font-weight: bold;
+    -fx-padding: 3 8;
+    -fx-background-radius: 5;
+}
+
+.cart-item-card {
+    -fx-background-color: #1A1008;
+    -fx-padding: 15;
+    -fx-background-radius: 10;
+    -fx-border-color: rgba(255, 255, 255, 0.05);
+    -fx-border-radius: 10;
+}
+
+.cart-place-order-btn {
+    -fx-background-color: #D35400; 
+    -fx-text-fill: #FFFFFF;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-padding: 15;
+    -fx-background-radius: 15;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(211, 84, 0, 0.4), 15, 0, 0, 5);
+}
+.cart-place-order-btn:hover {
+    -fx-background-color: #E67E22;
+}
+
+/* ========================================= */
+/* --- 5. SUCCESS SCREEN --- */
+/* ========================================= */
+
+.success-summary-card {
+    -fx-background-color: #1A1008;
+    -fx-border-color: rgba(255, 255, 255, 0.05);
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-padding: 25;
+}
+
+.success-qty-badge {
+    -fx-background-color: rgba(230, 194, 122, 0.1);
+    -fx-text-fill: #E6C27A;
+    -fx-font-weight: bold;
+    -fx-font-family: 'Segoe UI';
+    -fx-font-size: 14px;
+    -fx-background-radius: 50%;
+    -fx-min-width: 25px;
+    -fx-min-height: 25px;
+    -fx-alignment: center;
+}
